@@ -192,6 +192,8 @@ footer {
 }
 
 .card-div .card .card-footer button {
+  font-size: inherit;
+  font-family: inherit;
   color: #fff;
   position: relative;
   font-size: 1rem;
