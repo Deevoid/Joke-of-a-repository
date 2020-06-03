@@ -1,0 +1,234 @@
+:root {
+  --primary: #22d2a0;
+  --secondary: #192824;
+  --background: #fff;
+  --green: #1fc11b;
+  --yellow: #ffd913;
+  --orange: #ff9c55;
+  --red: #ff5555;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "Happy Monkey", cursive, sans-serif;
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+body::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #4d4a4a;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #665df5;
+}
+
+main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+p {
+  margin: 0;
+}
+
+footer {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.header {
+  margin: 0;
+  position: relative;
+  height: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem 2rem;
+  -webkit-box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  font-size: 1.5rem;
+}
+
+.header a {
+  color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header a .logo {
+  margin: 0.5rem;
+}
+
+.header .login-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .login-div button {
+  position: relative;
+  padding: 0.5rem;
+  background: none;
+  border-style: none;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+.header .login-div button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: inherit;
+  border: solid 2px #000;
+  -webkit-transform: skew(-10deg);
+          transform: skew(-10deg);
+}
+
+.card-div {
+  padding-top: 5rem;
+  max-width: 90%;
+  margin: 5rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-div .card {
+  position: relative;
+  min-height: 200px;
+  width: 400px;
+  padding: 1rem;
+  border: solid 3px var(--primary);
+  -webkit-box-shadow: 10px -10px 0 -3px var(--background), 10px -10px var(--green), 20px -20px 0 -3px var(--background), 20px -20px var(--yellow), 30px -30px 0 -3px var(--background), 30px -30px var(--orange), 40px -40px 0 -3px var(--background), 40px -40px var(--red);
+          box-shadow: 10px -10px 0 -3px var(--background), 10px -10px var(--green), 20px -20px 0 -3px var(--background), 20px -20px var(--yellow), 30px -30px 0 -3px var(--background), 30px -30px var(--orange), 40px -40px 0 -3px var(--background), 40px -40px var(--red);
+}
+
+.card-div .card .card-body {
+  margin: 1rem 0 2rem 0;
+}
+
+.card-div .card .card-footer {
+  position: absolute;
+  bottom: 0;
+  right: 3rem;
+}
+
+.card-div .card .card-footer button {
+  color: #fff;
+  position: relative;
+  font-size: 1rem;
+  width: 12rem;
+  height: 2rem;
+  margin-left: auto;
+  padding: 0 0.5rem;
+  border-style: none;
+  background: transparent;
+}
+
+.card-div .card .card-footer button i {
+  padding: 0 1rem;
+}
+
+.card-div .card .card-footer button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: var(--primary);
+  -webkit-transform: skew(-10deg);
+          transform: skew(-10deg);
+  z-index: -1;
+}
+
+@media (max-width: 575.98px) {
+  .header {
+    font-size: 1.2rem;
+    font-weight: 800;
+    padding: 1rem 1rem;
+  }
+  .card-div .card {
+    width: 100%;
+    min-height: 200px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
